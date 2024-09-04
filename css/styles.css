@@ -1,3 +1,63 @@
-p {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color:#dcdcdc;
+    --gray:#4a4a4d;
+    --bg-primary:#000000;
+}
+
+* {
+    font-family: "Cinzel", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--bg-primary);   
+}
+
+/* Header Start */
+
+header{
+    height: 100vh;
+}
+
+header .navbar {
+    background-image: url("/Amr995.github.io/img/stars.gif");
+    border-bottom: 1px solid goldenrod;
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+header .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#home #logo {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 750;
+}
+header .navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar nav ul a {
+    margin: 0 20px;
+    color: goldenrod;
+    font-weight: 600;
+}
+
+header div nav .logo {
+    color: whitesmoke;
 }
