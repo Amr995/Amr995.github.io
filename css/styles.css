@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 :root {
     --primary-color: whitesmoke;
-    --secondary-color:#dcdcdc;
+    --secondary-color:rgb(220, 220, 220);
     --gray:#4a4a4d;
     --bg-primary:#000000;
 }
@@ -19,6 +19,25 @@ body{
     background-color: var(--bg-primary);   
 }
 
+/* Utility Classes */
+.text-primary {
+    color: var(--secondary-color);
+}
+.btn-primary {
+    background-color:#daa520;
+    opacity: 85%;
+    color: #000000;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 650;
+    transition: all 0.29s ease-out;
+}
+.btn-primary:hover {
+    opacity: 100%; 
+    text-shadow: 3px 3px 3px #000000;
+    transform: none;
+}
+
 /* Header Start */
 
 header{
@@ -27,10 +46,10 @@ header{
 
 header .navbar {
     background-image: url("/Amr995.github.io/img/stars.gif");
+    filter: blur(0.40px);
     border-bottom: 1px solid goldenrod;
     position: fixed;
     width: 100%;
-    padding: 1.5rem 2rem;
 }
 
 header .navbar nav {
@@ -39,12 +58,13 @@ header .navbar nav {
     align-items: center;
     max-width: 1100px;
     margin: auto;
+    padding: 1.5rem 2rem;
 }
 
 #home #logo {
-    color: var(--primary-color);
-    font-size: 30px;
-    font-weight: 750;
+    color: var(--secondary-color);
+    font-size: 50px;
+
 }
 header .navbar nav ul {
     display: flex;
@@ -60,4 +80,50 @@ header .navbar nav ul a {
 
 header div nav .logo {
     color: whitesmoke;
+}
+
+header .header-content {
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+    align-items: center;
+}
+
+header .header-content .content-text {
+    margin-bottom: 5rem;
+}
+header .header-content p span {
+    font-weight: 700;
+    font-size: 20px;
+}
+header .header-content h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 3px rgba(220, 220, 220, 0.2);
+    margin-top: 10px;
+}
+header .header-content .title {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin: 10px 0;
+    font-weight: 500;
+}
+header .header-content .social {
+    margin: 1rem 2rem; 
+}
+header .header-content .social a i {
+    font-size: 18px;
+    padding: 10px;
+    color: #dcdcdc;
+    opacity: 50%;
+    background-image: url(/Amr995.github.io/img/stars.gif);
+    border-radius: 50px;
+    margin: 10px 0;
+    transition: all 0.29s ease-out;
+}
+header .header-content .social a i:hover {
+    transform: scale(1.3);
 }
