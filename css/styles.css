@@ -71,7 +71,7 @@ html {
 }
 
 #home .navbar {
-  background-image: url(/img/starts.gif);
+  background-image: url(/img/stars.gif);
   filter: blur(0.4px);
   border-bottom: 1px solid goldenrod;
   position: fixed;
